@@ -1,9 +1,7 @@
-const date = new Date("2024-10-12");
-const [month, day, year] = [
-  date.getMonth(),
-  date.getDate(),
-  date.getFullYear(),
+const date = new Date();
+  year=date.getFullYear(),
+  month=date.getMonth()+1,
+  day=date.getDate(),
 
-];
-const formatteDate = date.toLocaleDateString('ja-JP-japanese');
-console.log(formatteDate);
+
+console.log( year + '年' + month + '月' + day + '日');
