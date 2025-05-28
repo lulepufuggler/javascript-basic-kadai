@@ -1,5 +1,13 @@
 const btn = document.getElementById('btn');
 
+const text = document.getElementById('text');
+
 btn.addEventListener('click', () => {
-  console.log('クリックされました！');
+const childList = document.createElement('li');
+
+  childList.textContent = 'ボタンがクリックされました';
+
+ text.appendChild(childList);
+
+ text.textContent ='ボタンをクリックしました';
 });
